@@ -1,0 +1,100 @@
+/* src/AboutPage.css */
+
+.about-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    background-color: skyblue;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5em;
+    color: #00796b;
+  }
+  
+  .about-header p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .team-section {
+    text-align: center;
+  }
+  
+  .team-section h2 {
+    font-size: 2em;
+    color: #00796b;
+    margin-bottom: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+  
+  .team-member {
+    position: relative; /* Positioning context for hover effect */
+    background: pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 220px; /* Fixed width to keep them aligned side by side */
+    text-align: center;
+    overflow: hidden; /* Prevents overflow of hover info */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for scaling and shadow */
+  }
+  
+  .team-member:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .team-image {
+    width: 100%;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Transition for image scaling */
+  }
+  
+  .team-member:hover .team-image {
+    transform: scale(1.1); /* Scale image on hover */
+  }
+  
+  .team-member h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  .team-member p {
+    color: #777;
+    font-size: 0.9em;
+  }
+  
+  /* Enhanced hover effect for additional information */
+  .hover-info {
+    display: none; /* Hide by default */
+    position: absolute; /* Position it within the team member card */
+    bottom: 0; /* Position it at the bottom of the card */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
+    color: white; /* Text color */
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  }
+  
+  .team-member:hover .hover-info {
+    display: block; /* Show on hover */
+    opacity: 1; /* Fade in on hover */
+  }
+  

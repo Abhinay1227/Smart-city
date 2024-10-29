@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.home {
+  text-align: center;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgba(0, 115, 230, 0.8); /* Semi-transparent background */
+  color: white;
+  backdrop-filter: blur(10px); /* Adds a subtle blur for modern look */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.title:hover {
+  color: #ffdd57; /* Change color on hover */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #ff7e00;
+  transform: scale(1.1); /* Slightly enlarges on hover */
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  height: 60vh;
+  padding: 0 20px;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero h1, .hero p, .contact-button {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.contact-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ffdd57;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #ffcc33;
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* About & Features Sections */
+.about-section,
+.features-section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.features-section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.features-section ul li {
+  margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.logoi {
+  height: 40px;
+  border-radius: 20px;
+}
