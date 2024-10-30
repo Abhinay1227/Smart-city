@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/smart-city/static/css/main.e52325cd.css",
-    "main.js": "/smart-city/static/js/main.70e8e832.js",
-    "static/js/453.dd0b7555.chunk.js": "/smart-city/static/js/453.dd0b7555.chunk.js",
-    "static/media/bg.mp4": "/smart-city/static/media/bg.f5faaaa0977df32ffb8a.mp4",
-    "static/media/cat.jpg": "/smart-city/static/media/cat.bdd89f68f267b1d78589.jpg",
-    "index.html": "/smart-city/index.html",
-    "main.e52325cd.css.map": "/smart-city/static/css/main.e52325cd.css.map",
-    "main.70e8e832.js.map": "/smart-city/static/js/main.70e8e832.js.map",
-    "453.dd0b7555.chunk.js.map": "/smart-city/static/js/453.dd0b7555.chunk.js.map"
+    "main.css": "/static/css/main.e52325cd.css",
+    "main.js": "/static/js/main.ca5eb707.js",
+    "static/js/453.dd0b7555.chunk.js": "/static/js/453.dd0b7555.chunk.js",
+    "static/media/bg.mp4": "/static/media/bg.f5faaaa0977df32ffb8a.mp4",
+    "static/media/cat.jpg": "/static/media/cat.bdd89f68f267b1d78589.jpg",
+    "index.html": "/index.html",
+    "main.e52325cd.css.map": "/static/css/main.e52325cd.css.map",
+    "main.ca5eb707.js.map": "/static/js/main.ca5eb707.js.map",
+    "453.dd0b7555.chunk.js.map": "/static/js/453.dd0b7555.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e52325cd.css",
-    "static/js/main.70e8e832.js"
+    "static/js/main.ca5eb707.js"
   ]
 }
