@@ -22,12 +22,20 @@ const Home = () => {
       {/* Hero Section */}
       <header className="hero">
         <video className="hero-video" src={heroVideo} autoPlay loop muted />
+        <div className="hero-overlay"></div> {/* Overlay added here */}
         <h1>Welcome to Smart City</h1>
         <p>Experience a connected, innovative, and sustainable city for all residents.</p>
-        {/* Change the button to a Link component */}
-        <Link to="/login">
-          <button className="contact-button">Get Started</button>
-        </Link>
+       {/* Change the button to a Link component */}
+      <Link to="/login">
+       <button className="cta">
+       <span>Get Started</span>
+       <svg width="15px" height="10px" viewBox="0 0 13 10">
+       <path d="M1,5 L11,5"></path>
+       <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+       </button>
+      </Link>
+
       </header>
 
       {/* About Section */}

@@ -8,11 +8,11 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/smart-city"> {/* Set the basename here */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/login" element={<Login />} /> {/* Add route for login */}
+        <Route path="/login" element={<Login />} /> {/* Route for login */}
       </Routes>
     </Router>
   );
