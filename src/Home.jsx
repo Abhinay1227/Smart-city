@@ -11,7 +11,7 @@ const Home = () => {
       {/* Navigation Bar */}
       <nav className="navbar">
         <img className="logoi" src={logo} alt="logo" />
-        <div className="title">Smart City</div>
+       
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About Us</Link></li>
