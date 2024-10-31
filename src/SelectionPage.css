@@ -1,0 +1,63 @@
+/* SelectionPage.css */
+
+.selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../src/images/cat.jpg') no-repeat center center/cover;
+    color: white;
+  }
+  
+  .selection-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+  }
+  
+  .selection-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #b0b0b0;
+  }
+  
+  .selection-options {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .selection-card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .selection-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .admin-card {
+    border-top: 4px solid #1a73e8;
+  }
+  
+  .user-card {
+    border-top: 4px solid #34a853;
+  }
+  
+  .selection-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .selection-card p {
+    font-size: 1em;
+    color: #dcdcdc;
+  }
+  

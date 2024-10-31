@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/smart-city/static/css/main.8e36e702.css",
-    "main.js": "/smart-city/static/js/main.18e02f01.js",
+    "main.css": "/smart-city/static/css/main.5cdae219.css",
+    "main.js": "/smart-city/static/js/main.81d49bad.js",
     "static/js/453.dd0b7555.chunk.js": "/smart-city/static/js/453.dd0b7555.chunk.js",
     "static/media/bg.mp4": "/smart-city/static/media/bg.f5faaaa0977df32ffb8a.mp4",
     "static/media/cat.jpg": "/smart-city/static/media/cat.bdd89f68f267b1d78589.jpg",
     "index.html": "/smart-city/index.html",
-    "main.8e36e702.css.map": "/smart-city/static/css/main.8e36e702.css.map",
-    "main.18e02f01.js.map": "/smart-city/static/js/main.18e02f01.js.map",
+    "main.5cdae219.css.map": "/smart-city/static/css/main.5cdae219.css.map",
+    "main.81d49bad.js.map": "/smart-city/static/js/main.81d49bad.js.map",
     "453.dd0b7555.chunk.js.map": "/smart-city/static/js/453.dd0b7555.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e36e702.css",
-    "static/js/main.18e02f01.js"
+    "static/css/main.5cdae219.css",
+    "static/js/main.81d49bad.js"
   ]
 }

@@ -11,7 +11,6 @@ const Home = () => {
       {/* Navigation Bar */}
       <nav className="navbar">
         <img className="logoi" src={logo} alt="logo" />
-       
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About Us</Link></li>
@@ -26,15 +25,16 @@ const Home = () => {
         <h1>Welcome to Smart City</h1>
         <p>Experience a connected, innovative, and sustainable city for all residents.</p>
        {/* Change the button to a Link component */}
-      <Link to="/login">
-       <button className="cta">
-       <span>Get Started</span>
-       <svg width="15px" height="10px" viewBox="0 0 13 10">
-       <path d="M1,5 L11,5"></path>
-       <polyline points="8 1 12 5 8 9"></polyline>
-        </svg>
-       </button>
-      </Link>
+       <Link to="/selection">
+    <button className="cta">
+    <span>Get Started</span>
+    <svg width="15px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+   </svg>
+  </button>
+</Link>
+
 
       </header>
 
@@ -64,6 +64,6 @@ const Home = () => {
       </footer>
     </div>
   );
-};
+}
 
 export default Home;
