@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/smart-city/static/css/main.36b2c9c1.css",
+    "main.css": "/smart-city/static/css/main.91c266a6.css",
     "main.js": "/smart-city/static/js/main.fa46420a.js",
     "static/js/453.dd0b7555.chunk.js": "/smart-city/static/js/453.dd0b7555.chunk.js",
     "static/media/bg.mp4": "/smart-city/static/media/bg.f5faaaa0977df32ffb8a.mp4",
     "static/media/cat.jpg": "/smart-city/static/media/cat.bdd89f68f267b1d78589.jpg",
+    "static/media/bg.jpg": "/smart-city/static/media/bg.8f9aa8e0c73b75929507.jpg",
     "index.html": "/smart-city/index.html",
-    "main.36b2c9c1.css.map": "/smart-city/static/css/main.36b2c9c1.css.map",
+    "main.91c266a6.css.map": "/smart-city/static/css/main.91c266a6.css.map",
     "main.fa46420a.js.map": "/smart-city/static/js/main.fa46420a.js.map",
     "453.dd0b7555.chunk.js.map": "/smart-city/static/js/453.dd0b7555.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36b2c9c1.css",
+    "static/css/main.91c266a6.css",
     "static/js/main.fa46420a.js"
   ]
 }
