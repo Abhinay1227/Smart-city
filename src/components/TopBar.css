@@ -1,0 +1,39 @@
+/* TopBar.css */
+.top-bar {
+    height: 60px;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: space-between; /* Space out title and icons */
+    align-items: center;
+    padding: 0 20px;
+    margin-left: 250px; /* Match the sidebar width */
+    position: fixed;
+    top: 0; /* Stick to the top */
+    width: calc(100% - 250px); /* Full width minus sidebar */
+    z-index: 999; /* Ensure it's above other content */
+  }
+  
+  .top-bar-title {
+    font-size: 24px; /* Increased size for visibility */
+    font-weight: bold;
+    color: #34495e; /* Consistent text color */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .top-bar-icons {
+    display: flex;
+    align-items: center; /* Center icons vertically */
+  }
+  
+  .top-bar-icons i {
+    font-size: 24px; /* Ensure icons are large enough */
+    color: #2c3e50;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .top-bar-icons i:hover {
+    color: #1abc9c; /* Change color on hover for feedback */
+  }
+  
