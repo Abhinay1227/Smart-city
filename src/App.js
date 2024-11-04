@@ -6,8 +6,9 @@ import AboutPage from './AboutPage';
 import Login from './components/Login';
 import AdminLogin from './components/AdminLogin';
 import SelectionPage from './SelectionPage';
-import Dashboard from './components/Dashboard'; // Make sure you import Dashboard
-import WeatherDetails from './components/WeatherDetails'; // Import WeatherDetails
+import Dashboard from './components/Dashboard';
+import WeatherDetails from './components/WeatherDetails';
+import ContactUs from './ContactUs'; // Import ContactUs
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/selection" element={<SelectionPage />} />
-        <Route path="/dashboard" element={<Dashboard />} /> {/* Make sure this route is included */}
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/weather" element={<WeatherDetails />} />
+        <Route path="/contact" element={<ContactUs />} /> {/* Add the ContactUs route */}
       </Routes>
     </Router>
   );
