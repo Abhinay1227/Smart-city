@@ -11,7 +11,10 @@ function Dashboard() {
   const goToWeatherDetails = () => {
     navigate('/weather', { state: { city: "Guntur" } }); // Set Guntur as default
   };
-  
+
+  const goToForum = () => {
+    navigate('/forum'); // Navigate to the Forum page
+  };
 
   return (
     <div className="dashboard-container">
@@ -31,6 +34,10 @@ function Dashboard() {
           </div>
           <div className="card air-quality-widget">
             <i className="icon-air"></i> Air Quality Index
+          </div>
+          {/* Forum Widget */}
+          <div className="card forum-widget" onClick={goToForum}>
+            <i className="icon-forum"></i> Community Forum
           </div>
         </div>
       </div>

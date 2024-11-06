@@ -80,3 +80,17 @@
   margin-right: 10px;
   font-size: 24px;
 }
+/* src/Dashboard/Dashboard.css */
+.card.forum-widget {
+  background-color: #ffeb3b; /* Bright yellow for forum */
+  cursor: pointer;
+}
+
+.card.forum-widget:hover {
+  background-color: #fbc02d;
+}
+
+.card .icon-forum {
+  font-size: 24px;
+  margin-right: 10px;
+}
