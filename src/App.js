@@ -9,7 +9,7 @@ import SelectionPage from './SelectionPage';
 import Dashboard from './components/Dashboard';
 import WeatherDetails from './components/WeatherDetails';
 import ContactUs from './ContactUs'; // Import ContactUs
-
+import CityMap from './components/CityMap';
 function App() {
   return (
     <Router basename="/smart-city">
@@ -21,7 +21,8 @@ function App() {
         <Route path="/selection" element={<SelectionPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/weather" element={<WeatherDetails />} />
-        <Route path="/contact" element={<ContactUs />} /> {/* Add the ContactUs route */}
+        <Route path="/contact" element={<ContactUs />} /> 
+        <Route path="/map" element={<CityMap />} /> 
       </Routes>
     </Router>
   );
