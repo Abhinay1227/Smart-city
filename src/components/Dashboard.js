@@ -9,11 +9,11 @@ function Dashboard() {
   const navigate = useNavigate();
 
   const goToWeatherDetails = () => {
-    navigate('/weather', { state: { city: "Guntur" } }); // Set Guntur as default
+    navigate('/weather', { state: { city: "Guntur" } });
   };
 
   const goToForum = () => {
-    navigate('/forum'); // Navigate to the Forum page
+    navigate('/forum');
   };
 
   return (
@@ -21,7 +21,6 @@ function Dashboard() {
       <Sidebar />
       <TopBar />
       <div className="dashboard-content">
-        <div className="section-title">Dashboard Overview</div>
         <div className="widget-grid">
           <div className="card weather-widget" onClick={goToWeatherDetails}>
             <i className="icon-weather"></i> Weather Widget
@@ -35,7 +34,6 @@ function Dashboard() {
           <div className="card air-quality-widget">
             <i className="icon-air"></i> Air Quality Index
           </div>
-          {/* Forum Widget */}
           <div className="card forum-widget" onClick={goToForum}>
             <i className="icon-forum"></i> Community Forum
           </div>

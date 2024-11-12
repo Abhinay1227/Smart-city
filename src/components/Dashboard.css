@@ -1,96 +1,88 @@
+/* src/Dashboard/Dashboard.css */
 .dashboard-container {
   display: flex;
   height: 100vh;
   width: 100%;
-  background-color: #e8eef4; /* Softer background */
+  background-color: #f0f2f5;
 }
 
 .dashboard-content {
   flex-grow: 1;
   margin-left: 250px;
-  padding: 20px;
+  padding: 40px;
+  color: #2c3e50;
 }
 
 .section-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #2c3e50;
-  padding-bottom: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 30px;
 }
 
 .widget-grid {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 30px;
 }
 
+/* Base card styles */
 .card {
-  background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%);
   position: relative;
-  overflow: hidden;
-  color: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.15);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-.card:hover::before {
-  opacity: 1;
-}
-
-
-.weather-widget {
-  background-color: #16a085;
-  color: #fff;
-}
-
-.traffic-widget {
-  background-color: #d35400;
-  color: #fff;
-}
-
-.service-widget {
-  background-color: #2980b9;
-  color: #fff;
-}
-
-.air-quality-widget {
-  background-color: #c0392b;
-  color: #fff;
-}
-
-.icon-weather, .icon-traffic, .icon-service, .icon-air {
-  margin-right: 10px;
-  font-size: 24px;
-}
-/* src/Dashboard/Dashboard.css */
-.card.forum-widget {
-  background-color: #ffeb3b; /* Bright yellow for forum */
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
-.card.forum-widget:hover {
-  background-color: #fbc02d;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.card .icon-forum {
-  font-size: 24px;
-  margin-right: 10px;
+/* Widget-specific styles with gradients */
+.weather-widget {
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+}
+
+.traffic-widget {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+.service-widget {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.air-quality-widget {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.forum-widget {
+  background: linear-gradient(135deg, #f1c40f, #f39c12);
+}
+
+/* Icon styles */
+.icon-weather, .icon-traffic, .icon-service, .icon-air, .icon-forum {
+  font-size: 36px;
+  margin-right: 15px;
+  color: #fff;
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+
+.card:hover .icon-weather,
+.card:hover .icon-traffic,
+.card:hover .icon-service,
+.card:hover .icon-air,
+.card:hover .icon-forum {
+  opacity: 1;
 }
