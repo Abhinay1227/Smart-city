@@ -1,22 +1,36 @@
-// src/UserLogin.jsx
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import axios from 'axios';
 import './Login.css';
 
 function UserLogin() {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleLogin = (event) => {
+  const handleLogin = async (event) => {
     event.preventDefault();
-    
-    // Check if entered credentials match the specific email and password
-    if (email === 'abhi@gmail.com' && password === 'Abhi@1227') {
-      localStorage.setItem('isLoggedIn', 'true'); // Set login status in localStorage
-      navigate('/dashboard'); // Redirect to the dashboard page
-    } else {
-      alert('Invalid email or password'); // Show error message
+
+    // Prepare login data
+    const loginData = {
+      email: email,
+      password: password,
+    };
+
+    try {
+      // Send login request to the backend
+      const response = await axios.post('http://localhost:8080/api/login', loginData);
+
+      if (response.data === 'Login successful') {
+        localStorage.setItem('isLoggedIn', 'true'); // Set login status in localStorage
+        navigate('/dashboard'); // Redirect to the dashboard page
+      } else {
+        setErrorMessage('Invalid email or password'); // Show error message
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+      setErrorMessage('An error occurred. Please try again.');
     }
   };
 
@@ -41,6 +55,7 @@ function UserLogin() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button type="submit" className="login-button">Login</button>
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
         <p className="redirect-text">
           Don't have an account? <Link to="/signup">Sign Up</Link>
         </p>
